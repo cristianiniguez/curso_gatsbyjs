@@ -6,8 +6,9 @@ import {
   SizeSelect,
   StyledProductDetail,
   QtySelect,
+  Button,
 } from "../styles/components"
-import { SEO } from "."
+import { SEO, Stars } from "."
 
 function ProductDetail({ price, product: { name, metadata } }) {
   const formatedPrice = priceFormat(price)
@@ -22,6 +23,9 @@ function ProductDetail({ price, product: { name, metadata } }) {
         <Tag>Popular</Tag>
         <h2>{name}</h2>
         <b>{formatedPrice}</b>
+        <Stars />
+        {metadata.wear && <h3>Color: Azul</h3>}
+        <small>{metadata.description}</small>
         {metadata.wear && (
           <SizeSelect selected={size}>
             <SizeButton onClick={() => setSize(1)}>XS</SizeButton>
@@ -36,6 +40,7 @@ function ProductDetail({ price, product: { name, metadata } }) {
           <input type="text" disabled value={qty} />
           <button onClick={() => setQty(qty + 1)}>+</button>
         </QtySelect>
+        <Button>Agregar al carrito</Button>
       </div>
     </StyledProductDetail>
   )

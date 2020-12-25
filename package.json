@@ -1,9 +1,7 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
+  "name": "pswag-criniguez",
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.29.1",
@@ -41,11 +39,6 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "author": "cristianiniguez <felizpc1@gmail.com>",
+  "main": "gatsby-browser.js"
 }
